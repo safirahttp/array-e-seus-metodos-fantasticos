@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> exercicio 3 </title>
+    <script>
+
+        var drofo = [" Anel da Iinvisibilidade", " Botas Mágicas", " Botas Mágicas", " Poção do Sono", " Poção inocencia", " Poção de Inocência", ];
+        var topper = [" Capa da Invisibilidade", " Poção Anti-inteligência", " Pedra do Despertar", " Varinha das Varinhas", " Poção da Inocência", " Poção da Mentira", " Poção da Mentira"];
+        
+        topper.pop(); //usa poção da mentira
+        topper.splice(2,2); //perde pedra
+        topper.push(" Botas Mágicas"); //ganha par de bota do drofo
+        topper.push(" Escudo Mágico");// acha um escudo mágico
+        topper.push(" Espada Mágica");//acha uma espada mágica
+        topper.splice(1,1); //drofo usa poção de anti-inteligência do topper
+        drofo.splice(2,2); //drofo entrega o par de botas
+
+
+        drofo.push(" Botas Mágicas"); //acha mais uma bota mágica
+        drofo.splice(3,3) //usa poção sono
+        //usa poção de anti-inteligência do topper
+
+        drofo.push(" Ovo de Dragão"); //acha ovo de dragão
+        drofo.push(" Coxinha"); //acha uma coxinha
+
+
+        document.write("Inventário do Topper: " + topper + "<br><br>");
+        document.writeln("Inventário do Drofo: " + drofo);
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
